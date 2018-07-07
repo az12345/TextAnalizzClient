@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="starter-template">
+<h1>Загрузите файл формата .txt</h1>
+
+  <input type="file" (change)="selectFile($event)" class="form-control" id="download">
+
+<br>
+<button class="btn btn-primary btn-block"
+        (click)="upload()">Upload</button>
+
+<br>
+    <app-upload-file-details [fileDetails]="uploadFieResponse"></app-upload-file-details>
+  </div>
+    </div>
+
+
+
+
+

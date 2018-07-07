@@ -1,0 +1,25 @@
+<div *ngIf="fileDetails!= null">
+<div class="card bg-light text-dark">
+  <div class="card-header">{{fileDetails.fileName}}</div>
+  <div class="card-body">
+    <div *ngFor="let word of fileDetails.wordsCountList">
+    {{word}}
+  </div>
+    <div class="card-footer">
+      <p *ngIf="fileDetails.isBracketsOk;else unset">
+
+      </p>
+        <ng-template #unset>
+      <p>Скобки раставлены некоректно.</p>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+.

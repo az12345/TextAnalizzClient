@@ -1,0 +1,6 @@
+{
+  "/": {
+    "target": "http://spring-text-analizer.herokuapp.com",
+    "secure": false
+  }
+}
